@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Vẻ đẹp của tiếng nói – Những tiếng nói tạo nên thay đổi. Dự án học tập của học sinh.">
+<title>Vẻ đẹp của tiếng nói | Your Voice Matters</title>
+<!-- Tích hợp Google Fonts để phông chữ đàng hoàng, chuẩn mực và sắc nét -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --ink:#172b3a; --muted:#5e6b73; --paper:#f7f5ef; --white:#fff;
+  --teal:#1e6866; --teal-dark:#164e4c; --gold:#c69a4b; --line:#e4e0d6; --soft:#e9f0ed;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:'Inter', sans-serif;
+  line-height:1.7;
+  -webkit-font-smoothing: antialiased;
+}
+a{color:inherit}
+.wrap{width:min(1120px, calc(100% - 40px));margin:auto}
+
+/* Header mượt mà */
+header{
+  position:sticky;
+  top:0;
+  z-index:100;
+  background:rgba(247,245,239,.9);
+  backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--line);
+  transition: all 0.3s ease;
+}
+.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{font-family:'Merriweather', serif; font-weight:700;letter-spacing:.08em;font-size:1rem}
+.brand span{display:block;font-family:'Inter', sans-serif;font-weight:600;letter-spacing:.16em;color:var(--teal);font-size:.65rem;margin-top:2px}
+nav{display:flex;gap:26px;align-items:center}
+nav a{text-decoration:none;font-size:.9rem;font-weight:500;color:var(--muted);transition:color 0.25s ease}
+nav a:hover{color:var(--teal)}
+.menu{display:none;background:none;border:1px solid var(--line);border-radius:8px;padding:8px 12px;color:var(--ink);cursor:pointer}
+
+/* Hero Section */
+.hero{
+  padding:110px 0 90px;
+  background:linear-gradient(135deg,#eef4f1 0%,#f7f5ef 60%,#f1eae1 100%);
+  position:relative;
+  overflow:hidden;
+}
+.hero:after{
+  content:"";
+  position:absolute;
+  width:400px;
+  height:400px;
+  border:1px solid rgba(30,104,102,.15);
+  border-radius:50%;
+  right:-
